@@ -1,0 +1,24 @@
+V-COACH - paquete para publicar
+
+Archivos (subir TODOS a la misma carpeta, sin cambiar los nombres):
+  index.html            la app
+  manifest.webmanifest  datos para instalarla como app
+  sw.js                 hace que funcione sin conexión
+  icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png   íconos
+  logo.svg              logo en vectores (por si lo querés usar en otro lado)
+
+Publicar en GitHub Pages:
+  1. Crear un repositorio nuevo (por ejemplo "v-coach").
+  2. Subir todos los archivos a la raíz del repositorio.
+  3. Settings > Pages > Source: "Deploy from a branch" > rama main, carpeta / (root).
+  4. Abrir el link que da GitHub desde el celular.
+
+Instalar en el celular:
+  Android (Chrome): menú ⋮ > "Instalar app" o "Agregar a pantalla de inicio".
+  iPhone (Safari): botón Compartir > "Agregar a pantalla de inicio".
+
+Después de instalada funciona sin internet. Los datos quedan en el celular:
+descargá un respaldo (pestaña Equipo) después de cada partido.
+
+Para publicar una versión nueva: reemplazar los archivos y cambiar el número
+de CACHE en sw.js (v-coach-v11 -> v-coach-v12), así los celulares la toman.
